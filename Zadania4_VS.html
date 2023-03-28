@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl_PL">
+    <style>
+        textarea{
+            resize: none;
+        }
+
+        ol.a{
+            list-style-type: number;
+        }
+    </style>
+    <body>
+        <h1>Sposoby podłączania styli do strony:</h1>
+        <ol class="a">
+            <li><b><u>Zewnętrzny</u> arkusz stylów</b><br>
+                <textarea id="Zewnetrzny" name="Zewnetrzny" rows="3" cols="75">
+<head>
+    <link rel="Stylesheet" type="text/css" href="style.css" />
+</head>
+                </textarea>
+            </li>
+            <li><b>Styl <u>lokalny</u></b><br>
+                <textarea id="Lokalny" name="Lokalny" rows="1" cols="75">
+<selektor style="cecha1: wartość1; cecha2: wartość2...">...</selektor>
+                </textarea>
+            </li>
+            <li><b><u>Wewnętrzny</u> arkusz stylów</b><br>
+                <textarea id="Wewnetrzny" name="Wewnetrzny" rows="6" cols="75">
+<head>
+    <style type="text/css">
+        selektor1 { cecha: wartość; cecha2: wartość2... }
+        selektor2 { cecha: wartość; cecha2: wartość2... }
+    </style>
+</head>
+                </textarea>
+            </li>
+            <li><b><u>Alternatywny</u> arkusz stylów</b><br>
+                <textarea id="Alternatywny" name="Alternatywny" rows="5" cols="75">
+<head>
+    <link rel="Stylesheet" type="text/css" href="style.css" title="Nazwa domyślna" />
+    <link rel="Alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" />
+    <link rel="Alternate stylesheet" type="text/css" href="style2.css" title="Nazwa 2" />
+</head>
+                </textarea>
+            </li>
+            <li><b><u>Import</u> arkusza stylów</b><br>
+                <textarea id="Import" name="Import" rows="3" cols="75">
+<style type="text/css">
+    @import url(adres zewnętrznego arkusza stylów);
+</style>
+                </textarea>
+            </li>
+        </ol>
+    </body>
+</html>
