@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl_PL">
+    <style>
+        table, th, td{
+            border: 1px solid;
+        }
+
+        ol.a{
+            list-style-type: number;
+        }
+    </style>
+    <body>
+        <table>
+            <tr>
+                <th colspan="2" align="center">Cechy modyfikowania formatowania w</th>
+            </tr>
+            <tr>
+                <th align="center">w HTML</th>
+                <th align="center">w CSS</th>
+            </tr>
+            <tr>
+                <td>modyfikacja wyglądu elementów strony jest bardzo <b>żmudna</b> (atrybuty i znaczniki które za to odpowiadają, są porozrzucane w różnych miejscach kodu, mieszając się ze strukturą dokumentu).</td>
+                <td>rozdzielenie <b>struktury i prezentacji</b> dokumentów czyli: wszystkie polecenia dotyczące formatowania można umieścić w jednym miejscu (tzw. arkuszu) i powiązać je z konkretnymi elementami, wstawionymi za pomocą czystego (X)HTML. Taki sposób sprawia, że modyfikacja wyglądu stron może przebiegać dużo sprawniej.</td>
+            </tr>
+        </table>
+        <h1>Nowe możliwości CSS:</h1>
+        <ol class="a">
+            <li><b>Przestarzałe atrybuty i znaczniki</b>, znajdujące się bezpośrednio w składni HTML, które dotyczą formatowania (elementy <b>zdeprecjonowane</b>), będą stopniowo wycofywane przez producentów przeglądarek internetowych, na rzecz rekomendowanych analogicznych deklaracji CSS.</li>
+            <li>Dokumenty pisane z wykorzystaniem arkuszy stylów są zwykle bardziej <b>przejrzyste i krótsze</b>.</li>
+            <li>Style pozwalają w <b>łatwy sposób zarządzać</b> całą serią dokumentów, poprzez stosowanie zewnętrznych arkuszy stylów.</li>
+            <li>Dzięki możliwości stosowania klas selektorów, znacznie oszczędzamy sobie pisania. W <b>jednym miejscu określamy wszystkie atrybuty formatowania</b> (których może być bardzo dużo), odnoszące się do wielu elementów, które mają wyglądać tak samo. Bezpośrednio przy elemencie wystarczy podać tylko nazwę klasy i nie musimy już wypisywać dużej ilości poleceń. Znacznie przyspiesza to późniejszą modyfikację strony, ponieważ zmian dokonujemy tylko w jednym miejscu, a wpływają one na wiele elementów jednocześnie.</li>
+            <li>Możliwość <b>stosowania różnorodnych jednostek oraz sposobów definiowania kolorów</b>.</li>
+            <li>Różne wartości <b>pogrubienia czcionki</b> (9 rodzajów).</li>
+            <li><b>Dodatkowe możliwości formatowania tekstu</b>.</li>
+            <li><b>Efektowne filtry graficzne</b>.</li>
+            <li>Dodatkowe możliwości <b>określenia wyglądu dokumentów podczas ich drukowania</b>.</li>
+        </ol>
+        <h1>Wady CSS:</h1>
+        <ol class="a">
+            <li>złożona specyfikacja (składnia) nietolerująca, rzadnych błędów składniowych,</li>
+            <li>brak sygnalizacji błędów podczas wykonywania styli CSS oraz podczas ich realizacji,</li>
+            <li>błędne obsługiwanie CSS przez różne przeglądarki,</li>
+        </ol>
+    </body>
+</html>
