@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="pl_PL">
     <style>
-        ol {
+        li {
             list-style-type: number;
         }
     </style>
     <body>
-        <h1>Budowa selektora:</h1>
+        <h1>Rodzaje selektorów:</h1>
         <ol>
-            <h1><li>Wymień oraz opisz dwie części selektora,</li></h1>
-                <ol style="list-style-type: circle;">
-                    <li>Selektor określa do jakich elementów ma zostać przypisane formatowanie. np. p h1.</li>
-                    <li>Deklaracja jest umieszczona w nawiasie klamrowym {...} i podaje to formatowanie.</li>
+            <li>selektor prosty (selektor typu)</li>
+            <li>selektor uniwersalny</li>
+            <li>selektor potomka</li>
+            <li>selektor dziecka</li>
+            <li>selektor braci</li>
+            <li>selektor atrybutu:</li>
+            <ol>
+                <li style="list-style-type: lower-alpha;">prosty selektor atrybutu</li>
+                <li style="list-style-type: lower-alpha;">selektor atrybutu o określonej wartości</li>
+                <li style="list-style-type: lower-alpha;">selektor atrybutu zawierający określony wyraz</li>
+            </ol>
+            <li>Selektory specjalne:</li>
+            <ol>
+                <li style="list-style-type: lower-alpha;">selektor klasy</li>
+                <li style="list-style-type: lower-alpha;">pseudoklasyk</li>
+                <li style="list-style-type: lower-alpha;">selektory pseudoelementów</li>
+                <ol>
+                    <li style="list-style-type: disc">pierwsza linia</li>
+                    <li style="list-style-type: disc">pierwsza litera</li>
                 </ol>
-            <h1><li>Znaczenie nawisów klamrowych {...},</li></h1>
-                Podaje to formatowanie.
-            <h1><li>Opisz cechy,</li></h1>
-                Każda cecha ma ściśle wyszczególnioną listę wartości, które może przyjąć. Na przykład: cecha text-align (wyrównanie tekstu) może być przypisana tylko i wyłącznie do elementów blokowych, ponieważ podanie jej dla elementów wyświetlanych w linii nie miałoby sensu. Z drugiej strony cecha ta może przyjmować tylko wartości takie jak: left, right, center, justify. Przypisanie do niej np. wartości koloru nie miałoby sensu.
-            <h1><li>Opisz wartości,</li></h1>
-                Można podać dowolną liczbę, rozdzielając kolejne znakiem średnika (;).
-            <h1><li>Kiedy stosujemy znak średnika (;), kiedy nie jest konieczny.</li></h1>
-                Średnik na końcu deklaracji nie jest konieczny.
+            </ol>
         </ol>
     </body>
 </html>
